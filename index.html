@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Movie</title>
+</head>
+<body>
+   <section id="content">
+    <main id="navbar">
+        <div id="nav-left">
+          <a href="#"> السينما للجميع</a>
+        </div>
+        <div id="nav-center">
+            <a href="#">الرئيسية</a>
+            <a href="#">الأفلام</a>
+            <a href="#">المسلسلات</a>
+            <a href="#">البرامج الصيفية</a>
+            <a href="#">من نحن؟</a>
+            <a href="#">اتصل بنا</a>
+        </div>
+        <div id="nav-right">
+            <span class="material-symbols-outlined">
+                Search
+            </span>
+            <select id="select">
+                <option>Ar</option>
+                <option>En</option>
+            </select>
+            <button>تسجيل دخول</button>
+        </div>
+    </main>
+    <div id="center">
+        <h2>السينما للجميع</h2>
+        <h1>عدد غير محدود<span> من الأفلام</span> والمسلسلات والبرامج الصيفية <br>والمزيد</h1>
+        <div id="div-p">
+            <p>90FPS</p>
+            <p>عالية الدقة
+            </p>
+        </div><br>
+        <button onclick="document.location='#main-poster'">شاهد الآن !
+        </button>
+    </div>
+   </section>
+    <section id="main-poster">
+
+        <div id="title">
+        <div id="title-left">
+         <p>استمتع بـ</p>
+         <h1>أفضل الأفلام</h1>
+        </div>
+        <div id="title-right">
+          <a href="#">الأكثر مشاهدة</a>
+          <a href="#">الأكثر تفاعلًا</a>
+          <a href="#">الأكثر تحميلًا</a>
+
+        </div>
+        </div>
+
+        <div id="card">
+            <div id="poster">
+                <img src="img/poster/poster1.jpg" alt="Tragedy">
+            </div>
+            <div id="data-list">
+                <h1>The Tragedy of Macbeth</h1>
+                <p>The Tragedy of Macbeth is a 2021 American historical thriller film written,<br>
+                     directed and produced by Joel Coen,<br>
+                     based on the play Macbeth by William Shakespeare.</p>
+                     <div id="rate">
+                        <input type="radio" id="star5">
+                        <label onclick="document.getElementById('text').innerHTML='فيلم رائع'"  for="star5"></label>
+                        <input type="radio" id="star4">
+                        <label onclick="document.getElementById('text').innerHTML='جيد جدًا'" for="star4"></label>
+                        <input type="radio" id="star3">
+                        <label onclick="document.getElementById('text').innerHTML='جيد'" for="star3"></label>
+                        <input type="radio" id="star2">
+                        <label onclick="document.getElementById('text').innerHTML='يحتاج الكثير من التعديل'" for="star2"></label>
+                        <input type="radio" id="star1">
+                        <label onclick="document.getElementById('text').innerHTML='سئ جدًا'" for="star1"></label>
+                        <p id="text"></p>
+                     </div><br><br>
+
+                     <button>
+                        <span class="material-symbols-outlined">
+                            favorite
+                            </span>
+                            أضف إلى المفضلة
+                     </button>
+            </div>
+            
+        </div>
+        <div id="card">
+            <div id="poster">
+                <img src="img/poster/poster2.jpg" alt="Sky">
+            </div>
+            <div id="data-list">
+                <h1>What Do We See When We Look At The Sky</h1>
+                <p> A fairy-tale romance, a soccer (or football) saga, a portrait of small-town<br>
+                     charm and an ode to unencumbered youth.
+                    </p>
+                     <div id="rate">
+                        <input type="radio" id="star5">
+                        <label onclick="document.getElementById('text4').innerHTML='فيلم رائع'"  for="star5"></label>
+                        <input type="radio" id="star4">
+                        <label onclick="document.getElementById('text4').innerHTML='جيد جدًا'" for="star4"></label>
+                        <input type="radio" id="star3">
+                        <label onclick="document.getElementById('text4').innerHTML='جيد'" for="star3"></label>
+                        <input type="radio" id="star2">
+                        <label onclick="document.getElementById('text4').innerHTML='يحتاج الكثير من التعديل'" for="star2"></label>
+                        <input type="radio" id="star1">
+                        <label onclick="document.getElementById('text4').innerHTML='سئ جدًا'" for="star1"></label>
+                        <p id="text4"></p>
+                     </div><br><br>
+
+                     <button>
+                        <span class="material-symbols-outlined">
+                            favorite
+                            </span>
+                            أضف إلى المفضلة
+                     </button>
+            </div>
+            </div>
+            <div id="card">
+                <div id="poster">
+                    <img src="img/poster/poster3.jpeg" alt="God">
+                </div>
+                <div id="data-list">
+                    <h1>The Hand Of God</h1>
+                    <p>The Hand of God is a love letter to Italy and for Sorrentino,<br>
+                         it becomes a form of escapism<br>
+                         and a humane portrayal of a grief-stricken.</p>
+                         <div id="rate">
+                            <input type="radio" id="star5">
+                            <label onclick="document.getElementById('text3').innerHTML='فيلم رائع'"  for="star5"></label>
+                            <input type="radio" id="star4">
+                            <label onclick="document.getElementById('text3').innerHTML='جيد جدًا'" for="star4"></label>
+                            <input type="radio" id="star3">
+                            <label onclick="document.getElementById('text3').innerHTML='جيد'" for="star3"></label>
+                            <input type="radio" id="star2">
+                            <label onclick="document.getElementById('text3').innerHTML='يحتاج الكثير من التعديل'" for="star2"></label>
+                            <input type="radio" id="star1">
+                            <label onclick="document.getElementById('text3').innerHTML='سئ جدًا'" for="star1"></label>
+                            <p id="text3"></p>
+                         </div><br><br>
+    
+                         <button>
+                            <span class="material-symbols-outlined">
+                                favorite
+                                </span>
+                                أضف إلى المفضلة
+                         </button>
+                </div>
+                </div>
+                <div id="card">
+                    <div id="poster">
+                        <img src="img/poster/poster4.jpeg" alt="Bird">
+                    </div>
+                    <div id="data-list">
+                        <h1>BIRDMAN</h1>
+                        <p> Birdman or (The Unexpected Virtue of Ignorance)<br>
+                            is not only the best film of 2014,<br>
+                            but one of the best films ever.</p>
+                             <div id="rate">
+                                <input type="radio" id="star5">
+                        <label onclick="document.getElementById('text2').innerHTML='فيلم رائع'"  for="star5"></label>
+                        <input type="radio" id="star4">
+                        <label onclick="document.getElementById('text2').innerHTML='جيد جدًا'" for="star4"></label>
+                        <input type="radio" id="star3">
+                        <label onclick="document.getElementById('text2').innerHTML='جيد'" for="star3"></label>
+                        <input type="radio" id="star2">
+                        <label onclick="document.getElementById('text2').innerHTML='يحتاج الكثير من التعديل'" for="star2"></label>
+                        <input type="radio" id="star1">
+                        <label onclick="document.getElementById('text2').innerHTML='سئ جدًا'" for="star1"></label>
+                        <p id="text2"></p>
+                             </div><br><br>
+        
+                             <button>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                    </span>
+                                    أضف إلى المفضلة
+                             </button>
+                    </div>
+                    </div>
+                    
+    </section>
+    <section id="live">
+        <div id="live-left">
+            <p id="p1">البرامج الصيفية</p>
+            <h1>الأفلام والبرامج المباشرة للعائلة<br> والأصدقاء</h1>
+            <br>
+            <p>كانت فكرة التصوير موجودة في عصور ما قبل التاريخ <br>
+                حيث إنّ الإنسان حاول تصوير بعض العناصر الموجودة في بيئته على جدران الكهوف <br>
+                التي عاش فيها، بعد ذلك تطور هذا المفهوم على مر السنين لنراه بصورته الحالية <br>
+                كما تعتبر السينما من أهم عوامل تكوين الرأي العام
+                </p>
+                <h1>
+                    <span>4K HD</span>     عميل مميز
+                </h1>
+                <button>
+                    <span class="material-symbols-outlined">
+                        not_started
+                        </span>
+                        اشترك الآن
+                </button>
+        </div>
+        <div id="live-right">
+            <img src="img/live_img.png" alt="Family">
+        </div>
+    </section>
+    <section id="main-poster">
+
+     <div id="title2">
+        <div id="div-h1-p">
+            <p>
+                الأكثر مشاهدة 
+            </p>
+             <h1>استمتع بباقة من أفضل الأفلام</h1>
+        </div>
+     </div>
+
+        <div id="card">
+            <div id="poster">
+                <img src="img/poster/poster5.jpeg" alt="birds">
+            </div>
+            <div id="data-list">
+                <h1>The Metamorphosis Of Birds</h1>
+                <p>The Metamorphosis of Birds ” is difficult to categorize,<br>
+                     as a hybrid of memoir, metafiction,<br>
+                     family history and gorgeously.</p>
+                     <div id="rate">
+                        <input type="radio" id="star5">
+                        <label onclick="document.getElementById('text5').innerHTML='فيلم رائع'"  for="star5"></label>
+                        <input type="radio" id="star4">
+                        <label onclick="document.getElementById('text5').innerHTML='جيد جدًا'" for="star4"></label>
+                        <input type="radio" id="star3">
+                        <label onclick="document.getElementById('text5').innerHTML='جيد'" for="star3"></label>
+                        <input type="radio" id="star2">
+                        <label onclick="document.getElementById('text5').innerHTML='يحتاج الكثير من التعديل'" for="star2"></label>
+                        <input type="radio" id="star1">
+                        <label onclick="document.getElementById('text5').innerHTML='سئ جدًا'" for="star1"></label>
+                        <p id="text5"></p>
+                     </div><br><br>
+
+                     <button>
+                        <span class="material-symbols-outlined">
+                            favorite
+                            </span>
+                            أضف إلى المفضلة
+                     </button>
+            </div>
+            
+        </div>
+        <div id="card">
+            <div id="poster">
+                <img src="img/poster/poster6.jpeg" alt="BLOOD">
+            </div>
+            <div id="data-list">
+                <h1>There Will Be Blood</h1>
+                <p>he begins by trying to wrest silver from the earth with a pick and shovel,<br>
+                     and ends by extracting countless barrels of oil.
+                    </p>
+                     <div id="rate">
+                        <input type="radio" id="star5">
+                        <label onclick="document.getElementById('text6').innerHTML='فيلم رائع'"  for="star5"></label>
+                        <input type="radio" id="star4">
+                        <label onclick="document.getElementById('text6').innerHTML='جيد جدًا'" for="star4"></label>
+                        <input type="radio" id="star3">
+                        <label onclick="document.getElementById('text6').innerHTML='جيد'" for="star3"></label>
+                        <input type="radio" id="star2">
+                        <label onclick="document.getElementById('text6').innerHTML='يحتاج الكثير من التعديل'" for="star2"></label>
+                        <input type="radio" id="star1">
+                        <label onclick="document.getElementById('text6').innerHTML='سئ جدًا'" for="star1"></label>
+                        <p id="text6"></p>
+                     </div><br><br>
+
+                     <button>
+                        <span class="material-symbols-outlined">
+                            favorite
+                            </span>
+                            أضف إلى المفضلة
+                     </button>
+            </div>
+            </div>
+            <div id="card">
+                <div id="poster">
+                    <img src="img/poster/poster7.jpeg" alt="Beauty">
+                </div>
+                <div id="data-list">
+                    <h1>The Great Beauty</h1>
+                    <p>The Great Beauty is an utterly ravishing portrait of listless luxuriance,<br>
+                         a fantasy of decadent wealth and beauty.</p>
+                         <div id="rate">
+                            <input type="radio" id="star5">
+                            <label onclick="document.getElementById('text7').innerHTML='فيلم رائع'"  for="star5"></label>
+                            <input type="radio" id="star4">
+                            <label onclick="document.getElementById('text7').innerHTML='جيد جدًا'" for="star4"></label>
+                            <input type="radio" id="star3">
+                            <label onclick="document.getElementById('text7').innerHTML='جيد'" for="star3"></label>
+                            <input type="radio" id="star2">
+                            <label onclick="document.getElementById('text7').innerHTML='يحتاج الكثير من التعديل'" for="star2"></label>
+                            <input type="radio" id="star1">
+                            <label onclick="document.getElementById('text7').innerHTML='سئ جدًا'" for="star1"></label>
+                            <p id="text7"></p>
+                         </div><br><br>
+    
+                         <button>
+                            <span class="material-symbols-outlined">
+                                favorite
+                                </span>
+                                أضف إلى المفضلة
+                         </button>
+                </div>
+                </div>
+                <div id="card">
+                    <div id="poster">
+                        <img src="img/poster/poster8.jpeg" alt="New York">
+                    </div>
+                    <div id="data-list">
+                        <h1>Synecdoche, New York</h1>
+                        <p> follows a life that ages from about 40 to 80 on that scale.<br>
+                            Caden Cotard is a theater director,<br>
+                            with all of the hangups and self-pity.</p>
+                             <div id="rate">
+                                <input type="radio" id="star5">
+                        <label onclick="document.getElementById('text8').innerHTML='فيلم رائع'"  for="star5"></label>
+                        <input type="radio" id="star4">
+                        <label onclick="document.getElementById('text8').innerHTML='جيد جدًا'" for="star4"></label>
+                        <input type="radio" id="star3">
+                        <label onclick="document.getElementById('text8').innerHTML='جيد'" for="star3"></label>
+                        <input type="radio" id="star2">
+                        <label onclick="document.getElementById('text8').innerHTML='يحتاج الكثير من التعديل'" for="star2"></label>
+                        <input type="radio" id="star1">
+                        <label onclick="document.getElementById('text8').innerHTML='سئ جدًا'" for="star1"></label>
+                        <p id="text8"></p>
+                             </div><br><br>
+        
+                             <button>
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                    </span>
+                                    أضف إلى المفضلة
+                             </button>
+                    </div>
+                    </div>
+    </section>
+    <section id="info">
+          <div id="logo-div">
+            <a href="#">السينما للجميع</a>
+          </div>
+          <div id="info-r">
+            <a href="#">سياسة الاستخدام</a>
+            <a href="#">التسعير</a>
+            <a href="#">أفلام</a>
+            <a href="#">برامج تلفزيونية</a>
+            <input type="search" placeholder="ابحث عن فيلم..." id="">
+          </div>
+    </section>
+    <section id="part5">
+        <div id="pl-left">
+            <h2> <a href="#">Osama Atef Designs</a></h2>
+        </div>
+        <div id="p-r">
+            <img src="img/card_img.png" alt="card">
+        </div>
+    </section>
+</body>
+</html>
